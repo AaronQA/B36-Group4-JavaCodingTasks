@@ -8,4 +8,5 @@ public class OddOrEven {
 
     //solution
 
+
 }
