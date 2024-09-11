@@ -7,4 +7,5 @@ public class OddOrEven {
     identify(6); ->"Even"*/
 
     //solution
+
 }
