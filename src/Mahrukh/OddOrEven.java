@@ -1,4 +1,4 @@
-package mahrukh;
+package Mahrukh;
 
 public class OddOrEven {
     /*Write  a method which can identify given int number is even or odd
