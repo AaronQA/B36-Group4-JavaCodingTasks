@@ -13,7 +13,7 @@ public class OddOrEven {
     }
             public static void OddOrEven (int number){
 
-            if (number % 2 == 0) {
+            if (number % 2 == 0){
                 System.out.println("Even number: " + number);
             } else {
                 System.out.println("Odd number: " + number);
