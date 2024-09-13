@@ -7,11 +7,11 @@ public class OddOrEven {
     identify(6); ->"Even" */
 
     public static void main(String[] args) {
-        OddOrEven(5);
-        OddOrEven(6);
+        EvenOrOdd(5);
+        EvenOrOdd(6);
 
     }
-            public static void OddOrEven (int number){
+            public static void EvenOrOdd(int number){
 
             if (number % 2 == 0){
                 System.out.println("Even number: " + number);
