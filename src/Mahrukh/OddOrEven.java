@@ -1,4 +1,4 @@
-package mahrukh;
+package Mahrukh;
 
 public class OddOrEven {
     /*Write  a method which can identify given int number is even or odd
@@ -8,14 +8,14 @@ public class OddOrEven {
 
     // Solution
     public static void main(String[] args) {
-        identify(10);
-        identify(3);
+        identify(5);
+        identify(6);
     }
 
     public static void identify(int num){
 
         boolean isEven = num % 2 == 0;                      // boolean condition to check if even
         String evenOrOdd = (isEven) ? "Even" : "Odd";       // ternary if else statement
-        System.out.println(evenOrOdd);                      // return the result
+        System.out.println(evenOrOdd);                      // print the result
     }
 }
