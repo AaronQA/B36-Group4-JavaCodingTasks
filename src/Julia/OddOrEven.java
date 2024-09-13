@@ -9,7 +9,6 @@ public class OddOrEven {
     public static void main(String[] args) {
         EvenOrOdd(5);
         EvenOrOdd(6);
-
     }
             public static void EvenOrOdd(int number){
 
