@@ -18,8 +18,8 @@ public class Finra {
                 System.out.println("FINRA");
             } else if (i % 3 == 0) {                            // multiple of 3 -> prints "FIN"
                 System.out.println("FIN");
-            } else if (i % 5 == 0){
-                System.out.println("RA");                       // multiple of 5 -> prints "RA"
+            } else if (i % 5 == 0){                             // multiple of 5 -> prints "RA"
+                System.out.println("RA");
             } else {                                            // every other numbers -> print the number
                 System.out.println(i);
             }
