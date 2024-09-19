@@ -10,17 +10,17 @@ public class Finra {
         finra(1, 30);
     }
 
-    public static void finra(int startingNum, int endingNum){
+    public static void finra(int startingNum, int endingNum){   // custom method with beginning & ending numbers as arguments
 
-        for (int i = startingNum; i <= endingNum ; i++) {
+        for (int i = startingNum; i <= endingNum ; i++) {       // create for loop with mentioned arguments
 
-            if (i % 3 == 0 && i % 5 == 0) {
+            if (i % 3 == 0 && i % 5 == 0) {                     // multiple of 3 && 5 -> prints "FINRA"
                 System.out.println("FINRA");
-            } else if (i % 3 == 0) {
-                System.out.println("RA");
-            } else if (i % 5 == 0){
+            } else if (i % 3 == 0) {                            // multiple of 3 -> prints "FIN"
                 System.out.println("FIN");
-            } else {
+            } else if (i % 5 == 0){                             // multiple of 5 -> prints "RA"
+                System.out.println("RA");
+            } else {                                            // every other numbers -> print the number
                 System.out.println(i);
             }
 
