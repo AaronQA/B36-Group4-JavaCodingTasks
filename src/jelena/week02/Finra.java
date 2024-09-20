@@ -1,6 +1,6 @@
 package jelena.week02;
 
-import javax.imageio.stream.ImageInputStream;
+
 
 public class Finra {
 
