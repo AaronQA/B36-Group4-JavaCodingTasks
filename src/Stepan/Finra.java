@@ -6,9 +6,11 @@ public class Finra {
 
     public static void main(String[] args) {
 
-        // FINRA(0); test with zero - passed
-        // FINRA(-1); test with negative number - passed
-        FINRA(30);
+        //FINRA(-15, 0); // starting with negative - passed
+
+        //FINRA(1, 0); // end > start = exception - passed
+
+        FINRA(0, 5); // output: 0 1 2 FIN 4 RA
 
     }
 
@@ -21,14 +23,19 @@ public class Finra {
         FINRA();
      */
 
-    public static void FINRA(int count){
+    public static void FINRA(int start, int end){
 
-        if(count<=0){
-            System.err.println("!!! Invalid input : "+count+" !!!");
-            throw new InputMismatchException("number must be greater than zero");
-        }
+        if(start>end){
+            System.err.println("!!! Invalid input : the end point is less than the start point !!!");
+            throw new InputMismatchException("starting number must be less than or equal to end point");
+        } //checks if end < start to throw the exception
 
-        for (int i = 1; i < count; i++) {
+        for (int i = start; i <= end; i++) {
+
+            if(i==0){
+                System.out.print(i+" ");
+                continue;
+            } // if i = 0 then print out the zero and skip (to avoid printing FINRA during 0 value);
 
             if(i%3 == 0 && i%5 == 0){
                 System.out.print("FINRA ");
@@ -38,9 +45,11 @@ public class Finra {
                 System.out.print("RA ");
             }else{
                 System.out.print(i+" ");
-            }
+            } // checks the conditions for i variable
 
         }
+
+        System.out.println(""); // exits from current line
 
     }
 
