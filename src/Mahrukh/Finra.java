@@ -10,7 +10,7 @@ public class Finra {
         finra(1, 30);
     }
 
-    public static void finra(int startingNum, int endingNum){   // custom method with beginning & ending numbers as arguments
+    public static void finra(int startingNum, int endingNum){   // custom method that takes two parameters
 
         for (int i = startingNum; i <= endingNum ; i++) {       // create for loop with mentioned arguments
 
