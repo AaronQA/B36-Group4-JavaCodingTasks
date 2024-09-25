@@ -8,11 +8,11 @@ package Elena;
 
 public class Finra {
     public static void main(String[] args) {
-        finra();
+        finra(1, 30);
     }
 
-    public static void finra() {
-        for (int i = 1; i <= 30; i++) {
+    public static void finra(int startNum, int endNum) {
+        for (int i = startNum; i <= endNum; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("FINRA");
             } else if (i % 3 == 0) {
