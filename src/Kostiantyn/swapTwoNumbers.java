@@ -15,7 +15,8 @@ public class swapTwoNumbers {
                 System.out.println("After Swap: a = " + a + ", b = " + b);
             }
 
-            public static void main(String[] args) { swap (2,3) ;}   //// Call the method to swap the values
+            public static void main(String[] args) {
+            swap (2,3) ;}   //// Call the method to swap the values
 
             }
 
