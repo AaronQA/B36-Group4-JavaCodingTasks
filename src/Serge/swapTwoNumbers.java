@@ -33,5 +33,6 @@ public class swapTwoNumbers {
 
         System.out.println("Swapped n1: " + n1);
         System.out.println("Swapped n2: " + n2);
+
     }
 }
