@@ -15,10 +15,24 @@ public class swapTwoNumbers {
         System.out.println("num2: " + num2);
 
 
+        System.out.println("OR_______________________________");
 
 
+        swapNumbers(10, 20);
 
 
+    }
+
+    public static void swapNumbers(int n1, int n2) {
+        System.out.println("Initial n1: " + n1);
+        System.out.println("Initial n2: " + n2);
+
+        n1 = n1 + n2;
+        n2 = n1 - n2;
+        n1 = n1 - n2;
+
+        System.out.println("Swapped n1: " + n1);
+        System.out.println("Swapped n2: " + n2);
 
 
     }
