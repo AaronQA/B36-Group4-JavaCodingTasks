@@ -2,8 +2,8 @@ package Serge;
 
 public class Finra {
 
-    public static void finra(){
-        for (int i = 1; i <=30; i++) {
+    public static void finra(int startPoint,int number){
+        for (int i = startPoint; i <=number; i++) {
             if(i % 3 == 0 &&  i % 5 == 0){
                 System.out.println("FINRA");
             } else if ( i % 5 == 0){
@@ -17,7 +17,7 @@ public class Finra {
     }
 
     public static void main(String[] args) {
-        finra();
+        finra(3,40);
     }
 
     //Write a method which prints out the numbers from 1 to 30 but for numbers which are a multiple of 3,
