@@ -5,26 +5,26 @@ public class reverseNegativeNumber {
     //input: -35  output: -53
 
     public static void main(String[] args) {
-        reverseNegativeNumbers(-35);
+        System.out.println("reverseNegativeInteger(-35) = " + reverseNegativeInteger(-35));
 
         // Negative Testing
-        //reverseNegativeNumbers(35);
-        //reverseNegativeNumbers(0);
+        //System.out.println("reverseNegativeInteger(35) = " + reverseNegativeInteger(35));
+        //System.out.println("reverseNegativeInteger(0) = " + reverseNegativeInteger(0));
     }
 
-    public static void reverseNegativeNumbers(int num){
+    public static int reverseNegativeInteger(int num){
         if (num >= 0){
             throw new IllegalArgumentException("Number must be less than 0");
         }else {
-            String negativeInt = "" + num;      // convert int to String
-            String reverseInt = "";             // create an empty string to for reversed version
+            String negativeInt = String.valueOf(num);               // convert int to String
+            String reverseInt = "";                                 // create an empty string for reversed version
 
-            for (int i = negativeInt.length()-1; i >= 1 ; i--) {    // reversed for loop
-                reverseInt += negativeInt.charAt(i);                // concatenate reversed chars into reversed string
+            for (int i = negativeInt.length()-1; i >= 1 ; i--) {    // reverse for-loop excluding index 0 because index 0 is a "-" sign
+                reverseInt += negativeInt.charAt(i);                // concatenate reversed chars into an empty reversed string
             }
 
             reverseInt = "-" + reverseInt;                          // concatenate "-" into revered integer String
-            System.out.println(Integer.parseInt(reverseInt));       // convert String back to integer and print the value
+            return Integer.parseInt(reverseInt);                    // covert String back to integer and return the value
         }
     }
 
