@@ -1,4 +1,4 @@
-package Kostiantyn;
+package kostiantyn;
 
 public class Finra {
 
