@@ -1,4 +1,4 @@
-package Kostiantyn;
+package kostiantyn;
 
 public class OddOrEven {
     public static String identify (int number) {
