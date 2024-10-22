@@ -54,6 +54,7 @@ public class swapTwoNumbers {
 
     How to know binary representation of integer number:
 
+        - start processing debugging, creating a break point somewhere (because Evaluate menu only works during debugging);
         - alt + F8 (to open Evaluate menu);
         - insert: Integer.toBinaryString(here must be provided your integer number)
 
@@ -61,6 +62,7 @@ public class swapTwoNumbers {
 
     How to know numeral representation of binary number:
 
+        - start processing debugging, creating a break point somewhere (because Evaluate menu only works during debugging);
         - alt + F8 (to open Evaluate menu);
         - insert: Integer.parseInt("0111", 2)
 
