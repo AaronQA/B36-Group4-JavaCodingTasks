@@ -4,8 +4,8 @@ public class FrequencyOfCharacters {
     public static String FreqOfChar(String str) {
         String uniqueSet = "";
         for (int i = 0; i < str.length(); i++) {
-            // Use contains to check if the character is not already in unique
-            if (!uniqueSet.contains("" + str.charAt(i))) {
+
+            if (!uniqueSet.contains("" + str.charAt(i))) {    // Use contains to check if the character is not already in uniqueSet
                 uniqueSet += str.charAt(i);
             }
         }
