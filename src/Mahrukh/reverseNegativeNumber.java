@@ -5,14 +5,14 @@ public class reverseNegativeNumber {
     //input: -35  output: -53
 
     public static void main(String[] args) {
-        System.out.println("reverseNegativeInteger(-35) = " + reverseNegativeInteger(-35));
+        System.out.println("reverseNegativeInteger(-30) = " + reverseNegativeInteger(-30));
 
         // Negative Testing
         //System.out.println("reverseNegativeInteger(35) = " + reverseNegativeInteger(35));
         //System.out.println("reverseNegativeInteger(0) = " + reverseNegativeInteger(0));
     }
 
-    public static int reverseNegativeInteger(int num){
+    public static String reverseNegativeInteger(int num){
         if (num >= 0){
             throw new IllegalArgumentException("Number must be less than 0");
         }else {
@@ -22,9 +22,9 @@ public class reverseNegativeNumber {
             for (int i = negativeInt.length()-1; i >= 1 ; i--) {    // reverse for-loop excluding index 0 because index 0 is a "-" sign
                 reverseInt += negativeInt.charAt(i);                // concatenate reversed chars into an empty reversed string
             }
-
+//
             reverseInt = "-" + reverseInt;                          // concatenate "-" into revered integer String
-            return Integer.parseInt(reverseInt);                    // covert String back to integer and return the value
+            return reverseInt;                    // covert String back to integer and return the value
         }
     }
 
