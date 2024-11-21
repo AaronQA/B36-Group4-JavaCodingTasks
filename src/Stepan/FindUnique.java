@@ -14,7 +14,7 @@ public class FindUnique {
 
         System.out.println("\n - - - - - uniquePrint method use - - - - - -\n");
 
-        uniquePrint("AAABBBCCCDEF"); // output: Unique characters (3): | D | | E | | F |
+        uniquePrint("AAABBBCCCDEF"); // output: Unique characters (3): | D | E | F |
         uniquePrint("a");            // output: Unique characters (1): | a |
         uniquePrint("");             // output: String is empty
         uniquePrint(null);           // output: String is null
@@ -85,15 +85,13 @@ public class FindUnique {
 
                     }
 
-                    sb.append(" |");
-
                     charAmount++;
 
                 }
 
             }
 
-            System.out.println(sb.insert(sb.indexOf("(") + 1, charAmount)); // prints out the result
+            System.out.println(sb.insert(sb.indexOf(")"), charAmount).append(" |")); // prints out the result
 
         }
 
