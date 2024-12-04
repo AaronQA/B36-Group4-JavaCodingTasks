@@ -5,7 +5,7 @@ public class RemoveDuplicates {
         Ex:  removeDup("AAABBBCCC")  ==> ABC*/
 
     public static void main(String[] args) {
-        System.out.println(remDup("eeennnnkkkDFppp"));
+        System.out.println(remDup("eeennnnkkkDFppp")); // output: enkDFp
     }
 
     public static String remDup(String str) {
